@@ -3,47 +3,58 @@
 import re
 import time
 import json
+import mysql.connector
 from selenium import webdriver
 
-
 """
-get product id
+get comments
 """
-
 
 
 def find_comment_by_id(product_id):
     driver = webdriver.PhantomJS(executable_path="/usr/local/bin/phantomjs")
-    color = []
-    size = []
-    jd_url = 'https://item.jd.com/27344400591.html#comment'
+    comments = []
+    jd_url = 'https://item.jd.com/100001353926.html#comment'
+
+    mydb = mysql.connector.connect(
+        host="localhost",
+        user="root",
+        passwd="root",
+        database="web_crawler"
+    )
+
     driver.get(jd_url)
     time.sleep(30)
-
-    for i in range(2, 20):
+    for i in range(1, 50):
         try:
-            #path = ".//div[@class ='ui-page']/a[@ rel='{}']".format(str(i))
-            path = ".//div[@class ='ui-page']/a[@ rel='2']"
-            driver.find_element_by_xpath(".//div[@class ='ui-page']/a[@ rel='3']").click()
+            #driver.implicitly_wait(60)
+            path = ".//div[@class ='ui-page']/a[@ rel='{}']".format(str(i))
+            #path = ".//div[@class ='ui-page']/a[@ rel='2']"
+            driver.find_element_by_xpath(path).click()
             time.sleep(60)
             with open('comment.txt', "w+") as f:
                 f.write(driver.page_source)
-            return
             lis = driver.find_elements_by_class_name('order-info')
             for li in lis:
                 spans = li.find_elements_by_tag_name('span')
-                color.append(spans[0].text)
-                size.append(spans[1].text)
-        except:
+                comments.append({'color': spans[0].text, 'size': spans[1].text})
+                mycursor = mydb.cursor()
+                sql = "INSERT INTO comments (size, color, created_at) VALUES (%s, %s, %s)"
+                val = (spans[1].text, spans[0].text, spans[2].text)
+                mycursor.execute(sql, val)
+            mydb.commit()
+            print(comments)
+            comments = []
+        except Exception as e:
             print("An exception occurred {}".format(i))
-    return {'color': color, 'size': size}
+            print(e)
 
 
 data = find_comment_by_id(27344400591)
 # f = open('comment.txt',  "w+")
 # f.write(str(data))
 # f.close()
-print(data)
+# print(data)
 
 
 

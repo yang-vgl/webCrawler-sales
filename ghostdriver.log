@@ -1,40 +1,15 @@
-[INFO  - 2019-08-02T16:19:12.795Z] GhostDriver - Main - running on port 59357
-[INFO  - 2019-08-02T16:19:13.695Z] Session [446badc0-b541-11e9-8f95-6d40f96cd290] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
-[INFO  - 2019-08-02T16:19:13.696Z] Session [446badc0-b541-11e9-8f95-6d40f96cd290] - page.customHeaders:  - {}
-[INFO  - 2019-08-02T16:19:13.696Z] Session [446badc0-b541-11e9-8f95-6d40f96cd290] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"linux-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
-[INFO  - 2019-08-02T16:19:13.696Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 446badc0-b541-11e9-8f95-6d40f96cd290
-[ERROR - 2019-08-02T16:19:17.923Z] Session [446badc0-b541-11e9-8f95-6d40f96cd290] - page.onError - msg: TypeError: undefined is not an object (evaluating 'a.nodeName')
+[INFO  - 2019-08-06T08:36:25.511Z] GhostDriver - Main - running on port 58655
+[INFO  - 2019-08-06T08:36:26.161Z] Session [47540460-b825-11e9-bfbe-97745c42f8b3] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2019-08-06T08:36:26.161Z] Session [47540460-b825-11e9-bfbe-97745c42f8b3] - page.customHeaders:  - {}
+[INFO  - 2019-08-06T08:36:26.161Z] Session [47540460-b825-11e9-bfbe-97745c42f8b3] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"linux-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2019-08-06T08:36:26.161Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 47540460-b825-11e9-bfbe-97745c42f8b3
+[ERROR - 2019-08-06T08:36:32.401Z] Session [47540460-b825-11e9-bfbe-97745c42f8b3] - page.onError - msg: TypeError: undefined is not an object (evaluating 'a.nodeName')
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-08-02T16:19:17.923Z] Session [446badc0-b541-11e9-8f95-6d40f96cd290] - page.onError - stack:
+[ERROR - 2019-08-06T08:36:32.401Z] Session [47540460-b825-11e9-bfbe-97745c42f8b3] - page.onError - stack:
   on (https://newbuz.360buyimg.com/video/4.2/video.hls.min.js:12)
   a (https://static.360buyimg.com/item/unite/1.0.80/components/default/??preview/contrast.js,preview/panorama.js,videoBox/videoBox.js,videoBox/videoTrack.js,videoBox/videoAnchorPoint.js,videoBox/videoTrailer.js,common/plugins/jQuery.jqueryzoom.js,common/plugins/jQuery.zoom.js:9)
   (anonymous function) (https://static.360buyimg.com/item/unite/1.0.80/components/default/??preview/contrast.js,preview/panorama.js,videoBox/videoBox.js,videoBox/videoTrack.js,videoBox/videoAnchorPoint.js,videoBox/videoTrailer.js,common/plugins/jQuery.jqueryzoom.js,common/plugins/jQuery.zoom.js:9)
   onload (https://static.360buyimg.com/item/unite/1.0.80/components/default/??preview/contrast.js,preview/panorama.js,videoBox/videoBox.js,videoBox/videoTrack.js,videoBox/videoAnchorPoint.js,videoBox/videoTrailer.js,common/plugins/jQuery.jqueryzoom.js,common/plugins/jQuery.zoom.js:9)
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-08-02T16:19:17.955Z] Session [446badc0-b541-11e9-8f95-6d40f96cd290] - page.onError - msg: VIDEOJS: ERROR: (CODE:4 MEDIA_ERR_SRC_NOT_SUPPORTED) 无法获取播放内容。 [object Object]
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-08-02T16:19:17.956Z] Session [446badc0-b541-11e9-8f95-6d40f96cd290] - page.onError - stack:
-  apply (:0)
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-08-02T16:19:49.982Z] Session [446badc0-b541-11e9-8f95-6d40f96cd290] - page.onError - msg: TypeError: undefined is not an object (evaluating 'a.nodeName')
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2019-08-02T16:19:49.983Z] Session [446badc0-b541-11e9-8f95-6d40f96cd290] - page.onError - stack:
-  on (https://newbuz.360buyimg.com/video/4.2/video.hls.min.js:12)
-  a (https://static.360buyimg.com/item/unite/1.0.80/components/default/??preview/contrast.js,preview/panorama.js,videoBox/videoBox.js,videoBox/videoTrack.js,videoBox/videoAnchorPoint.js,videoBox/videoTrailer.js,common/plugins/jQuery.jqueryzoom.js,common/plugins/jQuery.zoom.js:9)
-  d (https://static.360buyimg.com/item/unite/1.0.80/components/default/??preview/contrast.js,preview/panorama.js,videoBox/videoBox.js,videoBox/videoTrack.js,videoBox/videoAnchorPoint.js,videoBox/videoTrailer.js,common/plugins/jQuery.jqueryzoom.js,common/plugins/jQuery.zoom.js:9)
-  o (https://static.360buyimg.com/item/unite/1.0.80/components/default/??preview/contrast.js,preview/panorama.js,videoBox/videoBox.js,videoBox/videoTrack.js,videoBox/videoAnchorPoint.js,videoBox/videoTrailer.js,common/plugins/jQuery.jqueryzoom.js,common/plugins/jQuery.zoom.js:9)
-  (anonymous function) (https://static.360buyimg.com/item/unite/1.0.80/components/default/??preview/contrast.js,preview/panorama.js,videoBox/videoBox.js,videoBox/videoTrack.js,videoBox/videoAnchorPoint.js,videoBox/videoTrailer.js,common/plugins/jQuery.jqueryzoom.js,common/plugins/jQuery.zoom.js:9)
-  getResolution (https://static.360buyimg.com/item/unite/1.0.80/components/default/??preview/contrast.js,preview/panorama.js,videoBox/videoBox.js,videoBox/videoTrack.js,videoBox/videoAnchorPoint.js,videoBox/videoTrailer.js,common/plugins/jQuery.jqueryzoom.js,common/plugins/jQuery.zoom.js:9)
-  initPlayer (https://static.360buyimg.com/item/unite/1.0.80/components/default/??preview/contrast.js,preview/panorama.js,videoBox/videoBox.js,videoBox/videoTrack.js,videoBox/videoAnchorPoint.js,videoBox/videoTrailer.js,common/plugins/jQuery.jqueryzoom.js,common/plugins/jQuery.zoom.js:9)
-  setData (https://static.360buyimg.com/item/unite/1.0.80/components/default/comment/??comment.js:3)
-  success (https://static.360buyimg.com/item/unite/1.0.80/components/default/comment/??comment.js:3)
-  resolveWith (https://misc.360buyimg.com/??jdf/lib/jquery-1.6.4.js,jdf/1.0.0/unit/base/1.0.0/base.js,jdf/1.0.0/unit/trimPath/1.0.0/trimPath.js,jdf/1.0.0/ui/ui/1.0.0/ui.js,jdf/1.0.0/ui/dialog/1.0.0/dialog.js:2)
-  w (https://misc.360buyimg.com/??jdf/lib/jquery-1.6.4.js,jdf/1.0.0/unit/base/1.0.0/base.js,jdf/1.0.0/unit/trimPath/1.0.0/trimPath.js,jdf/1.0.0/ui/ui/1.0.0/ui.js,jdf/1.0.0/ui/dialog/1.0.0/dialog.js:4)
-  onreadystatechange (https://misc.360buyimg.com/??jdf/lib/jquery-1.6.4.js,jdf/1.0.0/unit/base/1.0.0/base.js,jdf/1.0.0/unit/trimPath/1.0.0/trimPath.js,jdf/1.0.0/ui/ui/1.0.0/ui.js,jdf/1.0.0/ui/dialog/1.0.0/dialog.js:4)
 
   phantomjs://platform/console++.js:263 in error

@@ -1,6 +1,6 @@
 import mysql.connector
 
-color_cn = ['红', '橙', '黄', '绿', '青', '蓝','紫','粉','肤','黑', '灰']
+color_cn = ['红', '橙', '黄', '绿', '青', '蓝', '紫', '粉', '肤', '黑', '灰']
 color_eng = ['red', 'orange', 'yellow', 'green', 'green', 'blue', 'purple', 'pink', 'pink', 'black', 'grey']
 
 mydb = mysql.connector.connect(

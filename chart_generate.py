@@ -1,7 +1,6 @@
 import matplotlib.pyplot as plt
 import mysql.connector
 import numpy
-from matplotlib.ticker import FuncFormatter
 
 
 
@@ -21,7 +20,7 @@ print([x[0] for x in res])
 
 labels = [x[1] for x in res]
 sizes = [x[0] for x in res]
-colors = ['gold', 'yellowgreen', 'lightcoral', 'blue']
+colors = labels
 plt.pie(sizes,  labels=labels, colors=colors, autopct='%1.1f%%', shadow=True, startangle=140)
 plt.axis('equal')
 plt.savefig('./public/charts/pie.png', bbox_inches='tight')

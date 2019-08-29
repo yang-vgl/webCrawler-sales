@@ -14,7 +14,7 @@ get comments
 def find_comment_by_id(product_id):
     driver = webdriver.PhantomJS(executable_path="/usr/local/bin/phantomjs")
     comments = []
-    jd_url = 'https://item.jd.com/100001353926.html#comment'
+    jd_url = 'https://item.jd.com/{}.html#comment'.format(str(product_id))
 
     mydb = mysql.connector.connect(
         host="localhost",
@@ -25,13 +25,13 @@ def find_comment_by_id(product_id):
 
     driver.get(jd_url)
     time.sleep(30)
-    for i in range(1, 50):
+    for i in range(1, 10):
         try:
             #driver.implicitly_wait(60)
             path = ".//div[@class ='ui-page']/a[@ rel='{}']".format(str(i))
             #path = ".//div[@class ='ui-page']/a[@ rel='2']"
             driver.find_element_by_xpath(path).click()
-            time.sleep(60)
+            time.sleep(10)
             with open('comment.txt', "w+") as f:
                 f.write(driver.page_source)
             lis = driver.find_elements_by_class_name('order-info')
@@ -50,7 +50,7 @@ def find_comment_by_id(product_id):
             print(e)
 
 
-data = find_comment_by_id(27344400591)
+data = find_comment_by_id(100003464155)
 # f = open('comment.txt',  "w+")
 # f.write(str(data))
 # f.close()

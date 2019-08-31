@@ -50,7 +50,7 @@ def find_comment_by_id(product_id):
             print(e)
 
 
-data = find_comment_by_id(100003464155)
+#data = find_comment_by_id(100003464155)
 # f = open('comment.txt',  "w+")
 # f.write(str(data))
 # f.close()
